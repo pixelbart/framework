@@ -30,16 +30,19 @@ define('DB_PASS', ''); // DB User Password
 // Define Base Dir
 //--------------------------------------------------------------------------
 
+// Use it to include files (server path to this folder!)
 define('BASE_DIR', dirname(__FILE__));
 
 //--------------------------------------------------------------------------
 // Define Template Dir
 //--------------------------------------------------------------------------
 
+// Use it to include files from template dir (server path to the template folder)
 define('TEMPLATE_DIR', dirname(__FILE__) . '/app/Templates/' . TEMPLATE_NAME . '/');
 
 //--------------------------------------------------------------------------
 // Define Template Folder
 //--------------------------------------------------------------------------
 
+// Use it to link your css or javascript files in your templates
 define('TEMPLATE_URL', BASE_URL . 'app/Templates/' . TEMPLATE_NAME . '/');
