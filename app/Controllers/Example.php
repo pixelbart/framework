@@ -34,7 +34,7 @@ class Example extends Controller
 		 * Just create the example model to retrieve
 		 * some datas from your database
 		 */
-		$this->examples = new \App\Models\Example();
+		$this->examples = new \App\Models\Examples();
 		
 		// domain.com/ -> index method		
 		Nanite::get('/', array( $this, 'index' ) ); 
