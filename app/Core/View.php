@@ -13,8 +13,8 @@ namespace App\Core;
 class View
 {	
 	/**
-     * Include template file.
-     */
+	 * Include template file.
+	 */
 	public static function render($path, $data = false, $error = false)
 	{
 		require BASE_DIR . "/app/Views/$path.php";
