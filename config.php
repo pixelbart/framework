@@ -10,12 +10,23 @@
 // Define your Vars
 //--------------------------------------------------------------------------
 
-define('BASE_URL', ''); // URL from your site
+define('BASE_URL', 'http://api.getnudged.de/v2/'); // URL from your site
 define('BASE_LANG', 'de'); // html lang
 define('BASE_CHARSET', 'utf-8'); // meta charset
   
 define('TEMPLATE_NAME', 'default'); // Template Folder  
 define('TEMPLATE_404', '404'); // Template File from Template Dir for 404
+
+//--------------------------------------------------------------------------
+// Set your Database Connection
+//--------------------------------------------------------------------------
+
+define('DB_HOST', ''); // DB Host
+define('DB_NAME', ''); // DB Name
+define('DB_USER', ''); // DB User Name
+define('DB_PASS', ''); // DB User Password
+
+define('DB_CHARSET', 'utf8mb4'); // DB Charset
 
 //--------------------------------------------------------------------------
 // Define Base Dir
