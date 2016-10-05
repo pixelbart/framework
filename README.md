@@ -5,13 +5,6 @@ I've used the [Nova Framework](https://github.com/nova-framework) for an long ti
 **PHP Newbie** -> you are right here! It's not to difficult to understand the code.  
 **PHP PRO** -> go away! Just leave this place OR give some feedback and share your knowledge!
 
-#### Some points
-- namespaces
-- templates (change template name in `config.php` and add a new folder in the `template folder`)
-- Simple MVC
-- Core Model builds an mysqli connection (better solution? Just pull an request or write with me!)
-- I've started a simple formbuilder (app/Helpers/FormBuilder.php) just for fun
-
 ### Install
 
 1. Download the zip and unpack the files in any folder.  
@@ -26,6 +19,13 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.php/$1 [L,QSA]
 ```
+
+### Some points
+- namespaces
+- templates (change template name in `config.php` and add a new folder in the `template folder`)
+- Simple MVC
+- Core Model builds an mysqli connection (better solution? Just pull an request or write with me!)
+- I've started a simple formbuilder (app/Helpers/FormBuilder.php) just for fun
 
 ### Notes
 
