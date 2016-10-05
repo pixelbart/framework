@@ -1,7 +1,5 @@
 <?php
 /**
- * Index
- *
  * @author  Pixelbart
  * @version 1.0
  */
