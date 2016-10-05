@@ -14,16 +14,16 @@ use App\Core\View;
  */
 abstract class Controller
 {	
-	/**
-	 * View variable to use the view class.
-	 */
-    public $view;
-	
 		/**
-     * On run make an instance of the config class and view class.
-     */
-    public function __construct()
-    {
-        $this->view = new View();
-    }
+		 * View variable to use the view class.
+		 */
+		public $view;
+
+		/**
+		 * On run make an instance of the config class and view class.
+		 */
+		public function __construct()
+		{
+				$this->view = new View();
+		}
 }
