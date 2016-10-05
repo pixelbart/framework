@@ -10,7 +10,7 @@
 // Define your Vars
 //--------------------------------------------------------------------------
 
-define('BASE_URL', 'YOU-WEBSITE.COM'); // URL from your site
+define('BASE_URL', 'YOUR-WEBSITE.COM'); // URL from your site
 define('BASE_LANG', 'en'); // html lang
 define('BASE_CHARSET', 'utf-8'); // meta charset
   
