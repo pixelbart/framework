@@ -25,4 +25,4 @@ RewriteRule ^(.*)$ index.php/$1 [L,QSA]
 
 ### Notes
 
-Special thanks to Jack P. for the simple PHP Router [Nanite](https://github.com/nirix/nanite) and your, because you're reading my bad english! :)
+Special thanks to Jack P. for the simple PHP Router [Nanite](https://github.com/nirix/nanite) and you(!), because you've reading my bad english! :)
