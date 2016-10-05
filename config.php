@@ -14,7 +14,8 @@ define('BASE_URL', ''); // URL from your site
 define('BASE_LANG', 'de'); // html lang
 define('BASE_CHARSET', 'utf-8'); // meta charset
   
-define('TEMPLATE_NAME', 'default'); // Template Folder
+define('TEMPLATE_NAME', 'default'); // Template Folder  
+define('TEMPLATE_404', '404'); // Template File from Template Dir for 404
 
 //--------------------------------------------------------------------------
 // Define Base Dir
