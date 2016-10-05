@@ -65,7 +65,7 @@ class Session
 	public static function check($name, $url)
 	{		
 		if(!isset($_SESSION[$name])) {
-			header("Location: {$url});
+			header("Location: {$url}");
 			exit;			
 		}		
 	}
