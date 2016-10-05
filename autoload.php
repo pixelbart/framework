@@ -1,6 +1,7 @@
 <?php
 /** 
- * Autoloader
+ * Autoloader 
+ * (is a joke, i know. But its easy to understand!)
  *
  * @author  Pixelbart
  * @version 1.0
