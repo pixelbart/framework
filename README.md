@@ -14,7 +14,8 @@ I've used the [Nova Framework](https://github.com/nova-framework) for an long ti
 
 ### Install
 
-Download the zip and unpack the files in any folder. Now define in the `config.php` all empty variables (are marked with a comment behind) and just start programming.
+1) Download the zip and unpack the files in any folder. 
+2) Now define in the `config.php` all empty variables (are marked with a comment behind) and just start programming.
 
 If you use the "Framework" in a subfolder just change the `RewriteBase` in the `.htaccess` file.
 
