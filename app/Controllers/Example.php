@@ -10,8 +10,9 @@ namespace App\Controllers;
 use App\Core\View;
 use App\Core\Controller;
 
-use App\Models\Examples as Examples;
-
+/**
+ * Take use of Helpers
+ */
 use Helpers\Nanite as Nanite;
 use Helpers\Session as Session;
 use Helpers\Template as Template;
@@ -21,24 +22,29 @@ new Example;
 
 class Example extends Controller
 {
+	// Instance for examples
+	protected $examples;
 	
 	/**	
 	 * Constructor
-	 *
-	 * @author  Pixelbart
-	 * @version 1.0
 	 */
 	public function __construct()
-	{			
-		Nanite::get('/', array( $this, 'index' ) );
-		Nanite::get('/login', array( $this, 'login' ) );
+	{	
+		/**
+		 * Just create the example model to retrieve
+		 * some datas from your database
+		 */
+		$this->examples = new \App\Models\Example();
+		
+		// domain.com/ -> index method		
+		Nanite::get('/', array( $this, 'index' ) ); 
+		
+		// domain.com/login -> login method
+		Nanite::get('/login', array( $this, 'login' ) ); 
 	}
 	
 	/**
 	 * Index Page (/)
-	 *
-	 * @author  Pixelbart
-	 * @version 1.0
 	 */
 	public function index()
 	{		
@@ -49,7 +55,7 @@ class Example extends Controller
 		$data['body_class'] = 'class="example"';
 		
 		// Get nothing from the Examples Model
-        	$data['examples'] = Examples::getExamples();
+        	$data['examples'] = $this->examples->get();
 		
 		// Include Template File header.php
 		Template::render('header', $data);
@@ -63,9 +69,6 @@ class Example extends Controller
 	
 	/**
 	 * Login Page (/login)
-	 *
-	 * @author  Pixelbart
-	 * @version 1.0
 	 */
 	public function login()
 	{	
