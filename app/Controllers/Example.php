@@ -70,6 +70,7 @@ class Example extends Controller
 		// If not go to header location $url
 		Session::check($name, $url);
 		
+		// Set Title
 		$data['title'] = 'Login';
 		
 		// Include Template File header.php
