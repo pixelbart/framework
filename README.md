@@ -4,9 +4,9 @@ I've used the [Nova Framework](https://github.com/nova-framework) for an long ti
 
 ### Install
 
-Download the zip and just place the input any folder. Now go in the to config.php and set your variables and just start programming.
+Download the zip and place the input in any folder. Now set in your config.php all vars and just start programming.
 
-If you use the "Framework" in a subfolder just change the **RewriteBase** in your .htaccess File.
+If you use the "Framework" in a subfolder just change the **RewriteBase** in the .htaccess file.
 
 ### Notes
 
