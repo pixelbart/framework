@@ -66,4 +66,4 @@ class Example extends Controller
 		View::render('example/login', $data);
 		Template::render('footer', $data);
 	}
-}
+} // end Class Session
