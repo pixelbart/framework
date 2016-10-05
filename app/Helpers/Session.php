@@ -1,8 +1,9 @@
 <?php
 /**
- * Session Class
+ * Simple Sessions Class
  *
- * @author  Pixelbart
+ * @author  Pixelbart <me@pixelbart.de>
+ * @version 1.0
  */
 namespace Helpers;
 
