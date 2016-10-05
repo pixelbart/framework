@@ -42,10 +42,19 @@ class Example extends Controller
 	 */
 	public function index()
 	{		
+		// Set Title
 		$data['title'] = 'Example';
 		
-		Template::render('header', $data);	
+		// Get nothing from the Examples Model
+        	$data['examples'] = Examples::getExamples();
+		
+		// Include Template File header.php
+		Template::render('header', $data);
+		
+		// Include View example/index.php
 		View::render('example/index', $data);
+		
+		// Include Template File footer.php
 		Template::render('footer', $data);
 	}
 	
@@ -57,13 +66,19 @@ class Example extends Controller
 	 */
 	public function login()
 	{	
-		// Check if $_SESSION['token'] isset
-		Session::check();
+		// Check if SESSION $name is set
+		// If not go to header location $url
+		Session::check($name, $url);
 		
 		$data['title'] = 'Login';
 		
-		Template::render('header', $data);	
+		// Include Template File header.php
+		Template::render('header', $data);
+		
+		// Include View example/login.php	
 		View::render('example/login', $data);
+		
+		// Include Template File footer.php
 		Template::render('footer', $data);
 	}
 } // end Class Session
