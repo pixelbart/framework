@@ -34,9 +34,7 @@ foreach ( glob( "app/Helpers/*.php" ) as $file ) {
 // Start the Session
 //--------------------------------------------------------------------------
 
-use Helpers\Session as Session;
-
-Session::start();
+session_start();
 
 //--------------------------------------------------------------------------
 // Boot Models
