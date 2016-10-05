@@ -19,7 +19,7 @@ abstract class Controller
 	 */
     public $view;
 	
-	/**
+		/**
      * On run make an instance of the config class and view class.
      */
     public function __construct()
