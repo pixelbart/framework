@@ -16,7 +16,7 @@ class Template
 	 *
 	 * @param string $path
 	 * @param array|string|function $data
-	 * @error array|string|function $error
+	 * @param array|string|function $error
 	 */
 	public static function render($path, $data = false, $error = false)
 	{		
