@@ -13,8 +13,9 @@ use App\Core\Controller;
 use App\Models\Examples as Examples;
 
 use Helpers\Nanite as Nanite;
-use Helpers\FormBuilder as FormBuilder;
+use Helpers\Session as Session;
 use Helpers\Template as Template;
+use Helpers\FormBuilder as FormBuilder;
 
 new Example;
 
@@ -55,7 +56,10 @@ class Example extends Controller
 	 * @version 1.0
 	 */
 	public function login()
-	{		
+	{	
+		// Check if $_SESSION['token'] isset
+		Session::check();
+		
 		$data['title'] = 'Login';
 		
 		Template::render('header', $data);	
