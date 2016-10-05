@@ -10,7 +10,7 @@
 // Boot Config
 //--------------------------------------------------------------------------
 
-foreach ( glob( "app/Config/*.php" ) as $file ) {
+foreach ( glob( "Config/*.php" ) as $file ) {
     require_once $file;
 }
 
@@ -18,7 +18,7 @@ foreach ( glob( "app/Config/*.php" ) as $file ) {
 // Boot Core
 //--------------------------------------------------------------------------
 
-foreach ( glob( "app/Core/*.php" ) as $file ) {
+foreach ( glob( "Core/*.php" ) as $file ) {
     require_once $file;
 }
 
@@ -26,7 +26,7 @@ foreach ( glob( "app/Core/*.php" ) as $file ) {
 // Boot Helpers
 //--------------------------------------------------------------------------
 
-foreach ( glob( "app/Helpers/*.php" ) as $file ) {
+foreach ( glob( "Helpers/*.php" ) as $file ) {
     require_once $file;
 }
 
@@ -40,7 +40,7 @@ session_start();
 // Boot Models
 //--------------------------------------------------------------------------
 
-foreach ( glob( "app/Models/*.php" ) as $file ) {
+foreach ( glob( "Models/*.php" ) as $file ) {
     require_once $file;
 }
 
@@ -48,7 +48,7 @@ foreach ( glob( "app/Models/*.php" ) as $file ) {
 // Boot Controllers
 //--------------------------------------------------------------------------
 
-foreach ( glob( "app/Controllers/*.php" ) as $file ) {
+foreach ( glob( "Controllers/*.php" ) as $file ) {
     require_once $file;
 }
 
@@ -56,10 +56,6 @@ foreach ( glob( "app/Controllers/*.php" ) as $file ) {
 // Boot Views
 //--------------------------------------------------------------------------
 
-foreach ( glob( "app/Views/*.php" ) as $file ) {
+foreach ( glob( "Views/*.php" ) as $file ) {
     require_once $file;
-}
-
-if (!Helpers\Nanite::$routeProccessed) {
-    // 404 page here
 }
