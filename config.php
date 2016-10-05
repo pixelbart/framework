@@ -10,8 +10,8 @@
 // Define your Vars
 //--------------------------------------------------------------------------
 
-define('BASE_URL', 'http://api.getnudged.de/v2/'); // URL from your site
-define('BASE_LANG', 'de'); // html lang
+define('BASE_URL', 'YOU-WEBSITE.COM'); // URL from your site
+define('BASE_LANG', 'en'); // html lang
 define('BASE_CHARSET', 'utf-8'); // meta charset
   
 define('TEMPLATE_NAME', 'default'); // Template Folder  
