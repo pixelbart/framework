@@ -22,4 +22,4 @@ class Template
 	{		
 		require self::$dir . "$path.php";		
 	}	
-}
+} // end Class Session
