@@ -21,5 +21,5 @@ require('app/autoload.php');
 //--------------------------------------------------------------------------
 
 if (!Helpers\Nanite::$routeProccessed) {
-    require(TEMPLATE_DIR . '404.php');
+    require( TEMPLATE_DIR . TEMPLATE_404 . '.php' );
 }
