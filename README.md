@@ -7,6 +7,7 @@ I've used the [Nova Framework](https://github.com/nova-framework) for an long ti
 - templates (change template name in config.php and add a new folder in the **templates** folder)
 - Simple MVC
 - Core Model builds an mysqli connection (better solution? Just pull an request or write with me!)
+- I've started a simple formbuilder (app/Helpers/FormBuilder.php) just for fun
 
 ### Install
 
