@@ -116,4 +116,4 @@ class FormBuilder
 		
 		return $input;
 	}
-}
+} // end Class Session
