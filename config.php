@@ -26,8 +26,6 @@ define('DB_NAME', ''); // DB Name
 define('DB_USER', ''); // DB User Name
 define('DB_PASS', ''); // DB User Password
 
-define('DB_CHARSET', 'utf8mb4'); // DB Charset
-
 //--------------------------------------------------------------------------
 // Define Base Dir
 //--------------------------------------------------------------------------
