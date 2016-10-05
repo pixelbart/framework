@@ -13,6 +13,7 @@ class FormBuilder
 	 * Start the form
 	 *
 	 * @param array $atts
+	 * @return string
 	 */
 	public static function start( $atts )
 	{		
@@ -45,7 +46,9 @@ class FormBuilder
 	}
 	
 	/**
-	 * Close the form
+	 * Generate a html end form tag
+	 *
+	 * @return string
 	 */
 	public static function close()
 	{
@@ -57,6 +60,7 @@ class FormBuilder
 	 * Generates a html input field
 	 *
 	 * @param array $atts
+	 * @return string
 	 */
 	public static function input( $atts )
 	{
