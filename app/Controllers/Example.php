@@ -45,6 +45,9 @@ class Example extends Controller
 		// Set Title
 		$data['title'] = 'Example';
 		
+		// Set HTML Body Class
+		$data['body_class'] = 'class="example"';
+		
 		// Get nothing from the Examples Model
         	$data['examples'] = Examples::getExamples();
 		
@@ -72,6 +75,9 @@ class Example extends Controller
 		
 		// Set Title
 		$data['title'] = 'Login';
+		
+		// Set HTML Body Class
+		$data['body_class'] = 'class="login"';
 		
 		// Include Template File header.php
 		Template::render('header', $data);
