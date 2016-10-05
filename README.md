@@ -8,6 +8,14 @@ Download the zip and place the input in any folder. Now set in your config.php a
 
 If you use the "Framework" in a subfolder just change the **RewriteBase** in the .htaccess file.
 
+``` php
+RewriteEngine On
+RewriteBase / # <- HERE!
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+```
+
 ### Notes
 
 Special thanks to Jack P. for the simple PHP Router [Nanite](https://github.com/nirix/nanite) and your, because you're reading my bad english! :)
