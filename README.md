@@ -2,6 +2,9 @@
 
 I've used the [Nova Framework](https://github.com/nova-framework) for an long time, to build simple and small web applications - but Nova is now to big. So i build a simple, easy and unsecure(?) solution for me. Without awesome autoloading, without awesome special features. Just working for simple and easy web applications or apis.
 
+**PHP Newbie** -> you are right here! It's not to difficult to understand the code. 
+**PHP PRO** -> go away! Just leave this place OR give some feedback and share your knowledge!
+
 #### Some points
 - namespaces
 - templates (change template name in config.php and add a new folder in the **templates** folder)
