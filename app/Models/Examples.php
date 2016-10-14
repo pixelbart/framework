@@ -25,7 +25,7 @@ class Examples extends Model
 	 *
 	 * @return array/string (array if ok string if not ok)
 	 */
-	public function getExamples()
+	public function get()
 	{
 		// Query
 		$example_query = "SELECT example FROM examples";
