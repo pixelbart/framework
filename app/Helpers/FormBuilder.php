@@ -42,7 +42,7 @@ class FormBuilder
 			$c = '';
 		}
 		
-		$form  = '<form action="' . $a . '" method="' . $m . '" class="' . $c . '" id="' . $i . '" enctype="multipart/form-data" autocomplete="false" />';
+		$form  = '<form action="' . $a . '" method="' . $m . '" class="' . $c . '" id="' . $i . '" enctype="multipart/form-data" autocomplete="false">';
 		
  		return $form;		
 	}
