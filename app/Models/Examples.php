@@ -40,7 +40,7 @@ class Examples extends Model
 		
 		// If not show error 
 		else {
-			$return = srpintf("Error: %s\n", $this->db->error);
+			$return = sprintf("Error: %s\n", $this->db->error);
 		}
 		
 		// Close Connection
